@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PT Sans;
+}
+
+:root{
+    --darkblack:#000000;
+    --black:#0F0F0F;
+    --darkgray:#1F1F1F;
+    --white:#FFFFFF;
+    --gray:#969696;
+    --lightgray:#D0D0D0;
+}
+
+
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--white); 
+}
+h3{
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--white); 
+    text-transform: uppercase; 
+}
+h4{
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--white);
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+h5{
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--white);
+    text-transform: uppercase;
+}
+h6{
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--white);
+    padding: 20px 0;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 100px;
+    height: 2px;
+    background: var(--gray);
+    margin: 30px auto
+}
+
+.site{
+    max-width: 1920px;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+nav{
+    width: 100%;
+    
+}
+nav .navtop{
+    width: 100%;
+    padding: 10px 20%;
+    background: var(--darkblack);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .navtop p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--gray);
+    white-space: nowrap;
+}
+
+nav .navtop a{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--gray);
+    white-space: nowrap;
+}
+nav .navtop i{
+    padding-right: 10px;
+    font-size: 16px;
+    
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+    padding: 0px 20%;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.menu li{
+   height: 100%;
+
+}
+.menu-item{
+    padding: 0 20px;
+    gap: 10px;
+}
+.menu-item i{
+    display: none;
+}
+.menu a{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+    text-transform: uppercase;
+}
+.menu .menu-item:hover{
+    background: var(--darkgray);
+    color: var(--white);
+}
+
+.menu .active{
+    background: var(--darkgray);
+    color: var(--white);
+}
+.menu .save{
+    margin: 0 40px 0 20px;
+}
+.menu i{
+    font-size: 16px;
+    color: var(--white);
+}
+.menu .search input{
+    display: none;
+}
+.menu .search:hover i{
+    display: none;
+}
+.menu .search:hover input{
+   display: block;
+}
+header{
+    width: 100%;
+    background: url(./Rectangle\ 3.png);
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0%;
+    
+}
+header .logo{
+    width: 320px;
+    height: 320px;
+    border: 4px solid var(--white);
+    text-align: center;
+    padding: 100px 0;
+    margin: auto;
+    
+}
+
+header .logo img{
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 10px;
+}
+header .logo-info{
+    text-align: center;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding: 0 25%;
+}
+.sezon{
+    display: flex;
+}
+.sezon .sezon-info{
+    width: 52%;
+    background: var(--darkblack);
+    padding: 50px 40px;
+}
+.sezon-info .sezon-logo{
+    text-align: center;
+}
+
+.sezon-info .sezon-logo span{
+    font-size: 28px;
+}
+.sezon-info .sezon-menu{
+    margin: 50px 0;
+    overflow-x: scroll;
+    white-space: nowrap;
+
+}
+.box{
+    width:220px;
+    display: inline-block;
+}
+.img-box{
+   width: 100%;
+   height: 320px;
+   background: var(--darkgray);
+   padding: 20% 5%;
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.img-box img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.box p{
+    color: var(--lightgray);
+    font-size: 16px;
+}
+.sezon .kollek{
+    width: 48%;
+    background: url(./Rectangle\ 8.png);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 420px;
+    
+}
+.kollek button{
+    border: 1px solid var(--white);
+    padding: 12px 28px;
+    background: none;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+}
+.kollek button:hover{
+    background: var(--white);
+    color: var(--black);
+    transition: 1s;
+}
+.smotr{
+    display: flex;
+}
+.smotr-img{
+    width: 45%;
+}
+.smotr-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.smotr-menu{
+    width: 55%;
+    background: var(--darkblack);
+    text-align: center;
+    padding: 100px 15%;
+}
+
+.smotr-menu span{
+    font-size: 30px;
+}
+.smotr-menu p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+}
+.smotr-menu button{
+    border: 1px solid var(--white);
+    padding: 12px 28px;
+    background: none;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+.smotr-menu button:hover{
+    background: var(--white);
+    color: var(--black);
+    transition: 1s;
+}
+.postup{
+    background: var(--darkblack);
+    padding: 100px 20%;
+    
+}
+.postup h3{
+    text-align: center;
+}
+.postup .postup-menu{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    margin: 50px 0;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.list-item {
+    padding: 20px 0;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.list-item .box{
+    margin: auto;
+}
+.brend{
+    background: var(--black);
+    padding: 100px 20%;
+    text-align: center;
+}
+
+.brend .coco{
+   flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.foot{
+    background: url(./Rectangle\ 15.png);
+    background-position: center;
+    background-size: cover;
+    padding: 100px 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.magaz{
+    width: 30%;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+}
+.kategory{
+    width: 30%;
+}
+.gory-box{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.gory-box a{
+    padding: 10px 20px;
+    background: var(--black);
+    color: var(--white);
+    font-size: 14px;
+}
+.gory-box a:hover{
+    background: var(--white);
+    color: var(--black);
+    transition: 1s;
+}
+.silka{
+    width: 30%;
+}
+.silka p{
+    padding-bottom: 30px;
+}
+ input{
+    width: 210px;
+    height: 45px;
+    background: var(--gray);
+    color: var(--white);
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+.silka button{
+    width: 120px;
+    height: 45px;
+    background: var(--black);
+    color: var(--white);
+    border: none;
+}
+.silka button:hover{
+    background: var(--white);
+    color: var(--black);
+    transition: 1s;
+}
+.end{
+    background: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20%;
+}
+.end p{
+    font-size: 12px;
+    color: var(--lightgray);
+    font-weight: 400;
+    
+}
+.end a{
+    text-decoration: underline;
+    font-size: 12px;
+    color: var(--lightgray);
+    font-weight: 400;
+}
+@keyframes text-animation{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+@media(max-width:800px){
+    nav .navtop{
+        padding: 10px 10%;
+    }
+    nav .navtop div{
+      width: 100%;
+      /* background: var(--white); */
+      overflow: hidden;
+    }
+    nav .navtop div p{
+        animation: text-animation 10s linear infinite;
+    }
+    nav .navbar{
+        padding: 0 10%;
+    }
+    .menu .menu-item{
+        position: fixed;
+        right: 0;
+        top: 30%;
+        height: 50px;
+        background: var(--black);
+        width: 50px;
+    }
+    .menu .menu-item:nth-of-type(2){
+       margin-top: 50px;
+    }
+    .menu .menu-item:nth-of-type(3){
+        margin-top: 100px;
+    }
+    .menu .menu-item a{
+        display: none;
+    }
+    .menu .menu-item i{
+        display: block;
+        font-size: 24px;
+        padding: 10px;
+    }
+    .menu .menu-item:hover a{
+       display: block;
+    }
+    .menu .menu-item:hover{
+        width: auto;
+        transition: 1s;
+    }
+    
+    header .logo{
+        /* background: var(--darkgray); */
+        width: 280px;
+        height: 280px;
+    }
+    .sezon{
+        flex-direction: column;
+        
+    }
+    .sezon .sezon-info{
+        width: 100%;
+    }
+     .sezon .kollek{
+        width: 100%;
+        padding-bottom: 50px;
+        
+    }
+    .smotr{
+        flex-direction: column-reverse;
+    }
+    .smotr .smotr-img{
+        width: 100%;
+    }
+    .smotr .smotr-menu{
+        width: 100%;
+    }
+    .postup{
+        padding: 100px 10%;
+    }
+    .brend{
+        padding: 100px 10%;
+    }
+    .brend .coco{
+        flex-direction: column;
+    }
+    .foot{
+        padding: 100px 10%;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .magaz{
+        width: 100%;
+    }
+    .kategory{
+        width: 100%;
+    }
+    .silka{
+        width: 100%;
+    }
+    .end{
+        flex-direction: column;
+        gap: 30px;
+    }
+   
+}
+@media(max-width:500px){
+    nav .navtop{
+        padding: 10px 5%;
+    }
+    header .logo-info{
+        padding:0 5% ;
+    }
+}
